@@ -8,7 +8,67 @@
   <!-- Link para o Favicon -->
   <link rel="icon" type="image/x-icon" href="/portifolio/images/favicon.ico">
 
- <!-- Link externo para o css -->
+ <style>
+  /* Retira o padding e o margin padrão da página */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Html e body */
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+/* Body styles */
+body {
+  font-family: Roboto, sans-serif;
+  background-color: #1e3a5f;
+  color: #201c1c;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/* Navbar styles */
+nav ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  background-color: #222831;
+  padding-bottom: 15px;
+  font-family: Roboto, sans-serif;
+}
+
+nav ul li {
+  margin: 0 15px;
+  margin-top: 15px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #EEEEEE;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #20b2aa;
+}
+/*   End Of Nav Bar Styling   */
+
+footer {
+  background-color: #222831;
+  width: 100%;
+  text-align: center;
+  padding: 1rem 0;
+  color: #EEEEEE;
+}
+ </style>
 
 </head>
 <body>
@@ -16,14 +76,22 @@
 <!-- Top NavBar -->
 <nav>
   <ul> 
-    <li><a href="">Home</a></li>
-    <li><a href="">Sobre Min</a></li>
-    <li><a href="">Projetos</a></li>
-    <li><a href="">Galeria</a></li>
-    <li><a href="">Contato</a></li>
-    <li><a href="">Blog</a></li>
+    <li><a href="/portifolio/pages/home.html">Home</a></li>
+    <li><a href="/portifolio/pages/aboutme.html">Sobre Min</a></li>
+    <li><a href="/portifolio/pages/projects.html">Projetos</a></li>
+    <li><a href="/portifolio/pages/galery.html">Galeria</a></li>
+    <li><a href="/portifolio/pages/contact.html">Contato</a></li>
+    <li><a href="/portifolio/pages/blog.html">Blog</a></li>
   </ul>
 </nav>
+
+<!-- Formulário com HTTP e GET -->
+
+
+<!-- Rodapé -->
+<footer class="footer">
+  <p style="font-family: Roboto,sans-serif; color: #EEEE;">&copy; 2024 Otávio Ribeiro M. da Costa</p>
+</footer>
 
 </body>
 </html>
