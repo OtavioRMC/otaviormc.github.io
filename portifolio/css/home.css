@@ -1,11 +1,11 @@
-/* Reset styles */
+/* Retira o padding e o margin padrão da página */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-
+/* Html e body */
 html, body {
   height: 100%;
   display: flex;
