@@ -1,29 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Otávio Ribeiro </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Otávio Ribeiro - Projetos</title>
+    
+    <!-- Link para o Favicon -->
+    <link rel="icon" type="image/x-icon" href="/portifolio/images/favicon.ico">
+    
+    <!-- Fonte Customizada -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 
-  <!-- Link para o Favicon -->
-  <link rel="icon" type="image/x-icon" href="/portifolio/images/favicon.ico">
+    <!-- CSS Interno -->
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
- <!-- Link externo para o css -->
+        html, body {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
 
+        body {
+            font-family: Roboto, sans-serif;
+            background-color: #1e3a5f;
+            color: #201c1c;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Navbar styles */
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            background-color: #222831;
+            padding-bottom: 15px;
+            font-family: Roboto, sans-serif;
+        }
+
+        nav ul li {
+            margin: 0 15px;
+            margin-top: 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #EEEEEE;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            color: #20b2aa;
+        }
+
+        /* Project Grid Styles */
+
+        .my-projects{
+        text-align: center;
+        margin-bottom: 2rem;
+        font-size: 2rem;
+        font-weight: bold;
+        color: #EEEEEE;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem 0;
+        }
+
+        .project-box {
+            background: linear-gradient(to bottom right, #1f3b73, #0f5d6d);
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+            color: #EEEEEE;
+        }
+
+        .project-box:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .project-info {
+            padding: 1rem;
+            text-align: center;
+        }
+
+        .project-info h3,
+        .project-info h4,
+        .project-info p {
+        margin: 0;
+        color: #EEEEEE;
+        text-decoration: none;
+      }
+        a{
+          color: transparent;
+        }
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .project-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        footer {
+            background-color: #222831;
+            width: 100%;
+            text-align: center;
+            padding: 1rem 0;
+            color: #EEEEEE;
+        }
+    </style>
 </head>
 <body>
+    <!-- Top NavBar -->
+    <nav>
+        <ul> 
+            <li><a href="/portifolio/pages/home.html">Home</a></li>
+            <li><a href="/portifolio/pages/aboutme.html">Sobre Min</a></li>
+            <li><a href="/portifolio/pages/projects.html">Projetos</a></li>
+            <li><a href="/portifolio/pages/galeria.html">Galeria</a></li>
+            <li><a href="/portifolio/pages/contato.html">Contato</a></li>
+            <li><a href="/portifolio/pages/blog.html">Blog</a></li>
+        </ul>
+    </nav>
 
-<!-- Top NavBar -->
-<nav>
-  <ul> 
-    <li><a href="">Home</a></li>
-    <li><a href="">Sobre Min</a></li>
-    <li><a href="">Projetos</a></li>
-    <li><a href="">Galeria</a></li>
-    <li><a href="">Contato</a></li>
-    <li><a href="">Blog</a></li>
-  </ul>
-</nav>
+    <section id="projects">
+        <h2 class="my-projects">Meus Projetos</h2>
+        <div class="project-grid">
+            <div class="project-box">
+                <img src="/path/to/image1.jpg" alt="Project 1" class="project-image">
+                <div class="project-info">
+                    <h3>Pesquisador de Graduação</h3>
+                    <h4>Universidade de Ribeirão Preto</h4>
+                    <p>Fev 2024 - Presente</p>
+                </div>
+            </div>
+            
+            <div class="project-box">
+                <img src="/portifolio/images/logoJIRA.png" alt="Project 2" class="project-image">
+                <div class="project-info">
+                    <h3>J.I.R.A</h3>
+                    <h4> Manipulador Robótico com 5 graus de Liberdade </h4>
+                    <br>
+                    <p>Ago 2023 - Jun 2024</p>
+                </div>
+            </div>
+            
+            <div class="project-box">
+                <img src="/portifolio/images/logoSentinel.png" alt="Project 3" class="project-image">
+                <div class="project-info">
+                    <h3> Sentinel </h3>
+                    <h4> Segurança Industrial com I.A </h4>
+                    <br>
+                    <br>
+                    <p> Fev 2024 - Jun 2024 </p>
+                </div>
+            </div>
+            
+            <div class="project-box">
+              <a href="https://www.linkedin.com/posts/otaviormc_tenho-prazer-de-compartilhar-este-projeto-activity-7232516522743615490-ZYUQ?utm_source=share&utm_medium=member_desktop" target="_blank">
+                <img src="/portifolio/images/logoPCB.jpeg" alt="PCB" class="project-image">
+                <div class="project-info">
+                    <h3>PCB - Máquina de Estados</h3>
+                    <h4>Máquina Sequencial contadora</h4>
+                    <br>
+                    <br>
+                    <p>Fev 2024 - Jun 2024 </p>
+                </div>
+              </a>
+            </div>
+        </div>
+    </section>
 
+    <!-- Rodapé -->
+    <footer class="footer">
+        <p>&copy; 2024 Otávio Ribeiro M. da Costa</p>
+    </footer>
 </body>
 </html>
