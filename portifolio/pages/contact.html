@@ -61,8 +61,8 @@ nav ul li a:hover {
 }
 /*   End Of Nav Bar Styling   */
 form {
-   background-color: #fff;
-   color: #333;
+   background-color: #222831;
+   color: #EEEEEE;
    padding: 20px;
    border-radius: 8px;
    max-width: 600px;
@@ -79,13 +79,33 @@ label {
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 4px;
-  border: 1px solid #1a1818;
+  border: 1px solid #222831;
   font-family: Roboto, sans-serif;
+  
+}
+select:focus{
+  outline: 2px solid #20b2aa; 
+  outline-offset: 2px;
+}
+
+textarea{
+  outline: 2px solid #20b2aa; 
+  outline-offset: 2px;
 }
 
 input[type="radio"], input[type="checkbox"] {
   width: auto;
 }
+
+input:focus{
+  outline: 2px solid #20b2aa;
+  outline-offset: 1px;
+  -webkit-appearance: none;
+  appearance: none;
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0,2);
+}
+
+
 
 button {
   padding: 10px 15px;
